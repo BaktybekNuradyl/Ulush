@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacts page</title>
+    <link rel="stylesheet" href="ngn/styles/style.css">
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav">
+                <div class="nav-item__left">
+                    <a href="index.html" class="logo">
+                        <img src="ngn/img/icon/logo.svg" alt="#">
+                    </a>
+                </div>
+                <div class="nav-item__right ">
+                    <div class="nav-item">
+                        <a href="tour.html">Туры</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="about-us.html">О нас </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="yurta.html">Другие услуги</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="about-kg.html">О Кыргызстане</a>
+                    </div>
+                    <!-- <div class="nav-item">
+                      <a href="#">Карта</a>
+                  </div> -->
+                    <div class="nav-item">
+                        <a href="contacts.html">Контакты</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#">
+                            <img src="ngn/img/icon/russian.svg" alt="#">
+                        </a>
+                    </div>
+                    <!-- <div class="nav-item">
+                      <a href="#">
+                          <img src="ngn/img/icon/Search.svg" alt="#">
+                      </a>
+                  </div> -->
+                    <div class="nav-item music-nav">
+                        <div class="container-audio" onclick="toggleAudio()">
+                            <audio preload="metadata" controls controlslist="nodownload">
+                                <source src="ngn/music/penie.mp3" type="audio/mpeg">
+                                Your browser does not support the audio tag.
+                            </audio>
+                            <div class="play-button"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--   burger menu   -->
+                <div class="burger">
+                    <span></span>
+                </div>
+            </div>
+    </nav>
+
+
+
+    <!--    main  content   -->
+    <main class="about-kg">
+        <section class="contacts">
+            <div class="container">
+                <h1 class="contacts-title">
+                    Задайте свой вопрос
+                </h1>
+                <div class="contacts-wrapper">
+                    <div class="contacts-item">
+                        <p class="info-footer">Оставьте свой вопрос и мы свяжемся с вами в ближайшее время</p>
+                        <img class="contacts-subimg" src="ngn/img/about-kg/olen1.svg" alt="">
+                    </div>
+                    <div class="contacts-item">
+                        <form class="contact-form" action="" method="post" role="form">
+                            <input name="name" type="text" placeholder="Имя" required><br>
+                            <input name="phone" type="tel" placeholder="Телефон" required><br>
+                            <input name="e-mail" type="email" id="e-mail" placeholder="Почта" required><br>
+                            <input type="text" class="question" placeholder="Ваш вопрос" required><br>
+                            <button class="contacts-btn" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="contacts-social">
+                    <div class="contacts-subitem">
+                        <h3 class="route-title">Социальные
+                            сети</h3>
+                        <p>подписывайтесь на нас </p>
+                        <div>
+                            <div class="contacts-social__link">
+                                <img src="ngn/img/icon/tktok.svg" alt="#">
+                                <a href="https://vt.tiktok.com/ZSdXS4kk9/">ulush_travel</a>
+                            </div>
+                            <div class="contacts-social__link">
+                                <img src="ngn/img/icon/Instagram.svg" alt="#">
+                                <a href="https://www.instagram.com/ulush_travel/">ulush_travel.kg</a>
+                            </div>
+                            <div class="contacts-social__link">
+                                <img src="ngn/img/icon/Telegram.svg" alt="#">
+                                <a href="https://t.me/ulush_travel">ulush_travel</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts-subitem">
+                        <h3 class="route-title">Почта</h3>
+                        <a href="mailto: info@ulushtravel.com">
+                            info@ulushtravel.com
+                        </a>
+                    </div>
+                    <div class="contacts-subitem">
+                        <h3 class="route-title">Телефон</h3>
+                        <a href="tel:+996 (701) 099-993">+996 (701) 099-993</a>
+                        <img class="contacts-subimg" src="ngn/img/about-kg/olen2.svg" alt=""
+                            style="position: absolute;">
+                    </div>
+                    <div class="contacts-subitem">
+                        <h3 class="route-title">Адрес</h3>
+                        <a href="https://go.2gis.com/ji7t8">г.Бишкек, ул.Байтик Баатыра 86</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-item-right">
+                    <a href="index.html">
+                        <img src="ngn/img/icon/logo.svg" alt="#">
+                    </a>
+                </div>
+                <div class="footer-item-left">
+                    <div class="footer-item">
+                        <div class="footer-title">Выбрать
+                            тур-поездку</div>
+                        <a class="footer-sublink" href="tour.html">Индивидуальный</a>
+                        <a class="footer-sublink" href="tour.html">Групповой</a>
+                        <a class="footer-sublink" href="tour.html">Многодневный</a>
+                        <a class="footer-sublink" href="tour.html">Культурный</a>
+                        <a class="footer-sublink" href="tour.html">Экстремальный</a>
+                        <a class="footer-sublink" href="tour.html">Пеший</a>
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-title">
+                            Запланировать
+                            поездку
+                        </div>
+                        <a class="footer-sublink" href="tour.html">Найти тур</a>
+                        <a class="footer-sublink" href="about-us.html">Почему мы</a>
+                        <a class="footer-sublink" href="about-us.html">Наши эксперты</a>
+                        <!-- <a href="tour.html">Планируемые туры</a>
+                   <a href="tour.html">Составить тур</a> -->
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-title footer-title-2">
+                            Компания
+                        </div>
+                        <a class="footer-sublink" href="yurta.html">Юрточный лагерь</a>
+                        <a class="footer-sublink" href="contacts.html">Условия</a>
+                        <a class="footer-sublink" href="contacts.html">Политика бронирования</a>
+                        <a class="footer-sublink" href="contacts.html">Конфиденциальность</a>
+                        <!-- <a href="">Новости</a> <br>
+                   <a href="">Вакансия</a> -->
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-title">
+                            Служба
+                            поддержки
+                        </div>
+                        <a class="footer-sublink" href="contacts.html">Связаться с нами</a>
+                        <a class="footer-sublink" href="contacts.html">Вопросы-ответы</a>
+                        <a class="footer-sublink" href="contacts.html">Страхование</a>
+                    </div>
+                    <!-- <div class="footer-item">
+                   <div class="footer-title footer-title-2">
+                       Карта
+                   </div>
+                   <a href="">3D тур</a>
+               </div> -->
+                    <div class="footer-item">
+                        <div class="footer-title footer-title-2">
+                            Подписывайтесь
+                        </div>
+                        <a href="https://www.instagram.com/ulush_travel/" class="social">
+                            <img src="ngn/img/icon/Instagram.svg" alt="#">
+                            <p>Instagram</p>
+                        </a>
+                        <a href="" class="social">
+                            <img src="ngn/img/icon/Telegram.svg" alt="#">
+                            <p>Telegram</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">Ulush Travel 2019-2021. Все права защищены</p>
+        </div>
+    </footer>
+
+    <!--    scrirts -->
+    <script src="ngn/js/app.js"></script>
+
+</body>
+
+</html>

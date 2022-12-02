@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Admin panel</title>
+   <link rel="stylesheet" href="ngn/styles/style.css">
+</head>
+
+<body>
+
+   <div class="admin-main">
+      <div class="container">
+         <h1 class="admin-title">Форма добавления тура</h1>
+
+         <form method="post" enctype="multipart/form-data">
+            <div class="admin-items">
+               <label for="tour-name">Название тура</label>
+               <input type="text" name="tour-name" placeholder="Название тура" required>
+            </div>
+
+            <div class="admin-items">
+               <label for="price-tour">Стоимость тура</label>
+               <input type="text" name="price-tour" placeholder="Стоимость тура" required>
+            </div>
+
+            <div class="admin-items">
+               <label for="level-tour">Сложность тура</label>
+               <select name="level-tour">
+                  <option selected>Сложность тура</option>
+                  <option name="hard">Сложный тур</option>
+                  <option name="medium">Средний тур</option>
+                  <option name="easy">Лёгкий тур</option>
+               </select>
+            </div>
+
+            <div class="admin-items">
+               <label for="dlitelnost">Длительность тура</label>
+               <input type="text" name="duration-tour" placeholder="Длительность тура" required>
+            </div>
+
+            <div class="admin-items">
+               <label for="review-tour">Описание тура</label>
+               <textarea name="review-tour" placeholder="Краткое описание тура" cols="30" rows="10" required></textarea>
+            </div>
+
+            <div class="admin-items">
+               <label for="img-tour">Изображение тура</label>
+               <input type="file" name="img-tour" placeholder="Изображение тура" required>
+            </div>
+
+            <p>Программа тура</p>
+            <button data-target="days" class="add-days__btn">Добавить программу</button>
+
+
+            <!-- days programm -->
+            <div class="days">
+               <div class="admin-items">
+                  <label for="day-tour">День тура</label>
+                  <input type="text" name="day-tour" placeholder="Дни" required>
+               </div>
+               <div class="admin-items">
+                  <label for="location-day">Локация дня</label>
+                  <input type="text" name="location-day" placeholder="Локация" required>
+               </div>
+               <div class="admin-items">
+                  <label for="review-day">Описание дня тура</label>
+                  <textarea name="review-day" placeholder="Краткое описание" cols="30" rows="10" required></textarea>
+               </div>
+               <div class="admin-items">
+                  <label for="photo-day">Изображение тура</label>
+                  <input type="file" name="photo-day" placeholder="Изображение тура" required>
+               </div>
+               <div class="admin-items">
+                  <p>Питание</p>
+                  <div>
+                     <input type="checkbox" name="breakfast">
+                     <label for="breakfast">Завтрак</label>
+                     <input type="checkbox" name="dinner">
+                     <label for="dinner">Обед</label>
+                     <input type="checkbox" name="ujin">
+                     <label for="ujin">Ужин</label>
+                  </div>
+               </div>
+               <p>Проживание</p>
+               <div class="admin-items">
+                  <label for="living-day">Фото места проживания</label>
+                  <input type="file" name="living-day" placeholder="Изображение места проживания">
+               </div>
+               <div class="admin-items">
+                  <label for="name-day">Название тура</label>
+                  <input type="text" name="name-day" placeholder="Название тура" required>
+               </div>
+               <button data-target="days" class="save-tour__btn">Сохранить</button>
+            </div>
+
+            <p>Что включено</p>
+            <button data-target="services" class="add-days__btn">Добавить</button>
+
+
+            <!-- what included to tour -->
+            <div class="services">
+               <div class="admin-items">
+                  <label for="review-day">Что включено</label>
+                  <textarea name="review-day" placeholder="Что включено" cols="30" rows="10" required></textarea>
+               </div>
+               <button data-target="services" class="save-tour__btn">Сохранить</button>
+            </div>
+
+            <p>Что не включено</p>
+            <button data-target="noservices" class="add-days__btn">Добавить</button>
+
+            <!-- what not included to tour -->
+            <div class="noservices">
+               <div class="admin-items">
+                  <label for="review-day">Что не включено</label>
+                  <textarea name="review-day" placeholder="Что не включено" cols="30" rows="10" required></textarea>
+               </div>
+               <button data-target="noservices" class="save-tour__btn">Сохранить</button>
+            </div>
+
+            <div class="admin-submit">
+               <button type="submit">Отправить</button>
+            </div>
+         </form>
+
+      </div>
+   </div>
+
+   <!--   scripts  form   -->
+   <script>
+      let tform = document.querySelector('form');
+      document.onclick = function (e) {
+         if (e.target.classList.contains('add_progelem')) {
+            e.preventDefault();
+            let progelem = {
+               'location': document.querySelector('.progloc').value,
+               'day': document.querySelector('.progdays').value
+            }
+            let proginput = document.createElement('input');
+            proginput.setAttribute('name', 'program[]');
+            proginput.setAttribute('type', 'hidden');
+
+            // let proginputfile = document.createElement('input');
+            // proginputfile.setAttribute('name', 'progfile[]');
+            // proginputfile.setAttribute('type', 'file');
+            // proginputfile.value = document.querySelector('.progfile').value;
+            let proginputfile2 = document.querySelector('.progfile');
+            tform.append(proginputfile2);
+
+            proginput.value = JSON.stringify(progelem);
+            // tform.append(proginput);
+            // tform.append(proginputfile);
+            console.log(proginputfile2.files[0]);
+            console.log(proginput);
+            console.log(document.querySelector('.progfile').value);
+         }
+      }
+      tform.onsubmit = function (e) {
+
+         console.log(tform);
+      }
+
+   </script>
+
+</body>
+<script src="ngn/js/app.js"></script>
+
+</html>

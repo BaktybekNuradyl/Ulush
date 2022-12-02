@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transpport page</title>
+    <link rel="stylesheet" href="ngn/styles/style.css">
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav">
+                <div class="nav-item__left">
+                    <a href="index.html" class="logo">
+                        <img src="ngn/img/icon/logo.svg" alt="#">
+                    </a>
+                </div>
+                <div class="nav-item__right ">
+                    <div class="nav-item">
+                        <a href="tour.html">Туры</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="about-us.html">О нас </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="yurta.html">Другие услуги</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="about-kg.html">О Кыргызстане</a>
+                    </div>
+                    <!-- <div class="nav-item">
+                        <a href="#">Карта</a>
+                    </div> -->
+                    <div class="nav-item">
+                        <a href="contacts.html">Контакты</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#">
+                            <img src="ngn/img/icon/russian.svg" alt="#">
+                        </a>
+                    </div>
+                    <!-- <div class="nav-item">
+                        <a href="#">
+                            <img src="ngn/img/icon/Search.svg" alt="#">
+                        </a>
+                    </div> -->
+                    <div class="nav-item music-nav">
+                        <div class="container-audio" onclick="toggleAudio()">
+                            <audio preload="metadata" controls controlslist="nodownload">
+                                <source src="ngn/music/penie.mp3" type="audio/mpeg">
+                                Your browser does not support the audio tag.
+                            </audio>
+                            <div class="play-button"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--   burger menu   -->
+                <div class="burger">
+                    <span></span>
+                </div>
+            </div>
+    </nav>
+
+
+
+    <!--    main  content   -->
+    <main class="about-kg">
+
+        <section class="podbor">
+            <div class="container">
+                <h3 class="podbor-title">Транспорт</h3>
+            </div>
+        </section>
+
+
+        <!-- tours is coming -->
+        <section class="transport-main">
+            <div class="container">
+                <div class="transport-submain">
+                    <div class="sub-history__info">
+                        <h3 class="come-tours__title">
+                            Транспортные услуги
+                        </h3>
+                        <p>
+                            Мы предлагаем широкий спектр дополнительны услуг для вашего удобства
+                        </p>
+                        <img class="trans-first" src="ngn/img/bus.jpg" alt="#">
+                        <p>
+                            В эпоху раннего средневековья на территорию Киргизии проникают тюрки. В 7 веке территория
+                            Киргизии
+                            вошла в состав Западно-тюркского каганата. А в начале 8 века политическая власть находилась
+                            в руках
+                            тюргешской конфедерации тюркских племен, в середине века эти земли захватил племенной союз
+                            карлуков. В этот период увеличилось количество городов и других поселений в долинах рек Чу и
+                            Талас.
+                            Земледельцы стали вести активную торговлю не только с кочевыми племенами, но и с большими
+                            караванами, следовавшими через долину реки Чу по Великому Шелковому пути из Восточной Европы
+                            в
+                            Юго-Восточную Азию. И как раз в это время здесь впервые появилась киргизская народность.
+                        </p>
+                    </div>
+                    <div class="history-img">
+                        <img src="ngn/img/bus.jpg" class="bus-img" alt="#">
+                    </div>
+                </div>
+
+
+                <div class="transport-item">
+                    <h3 class="trans-item__title">
+                        1st Service
+                    </h3>
+                    <p class="trans-item__desc">
+                        Земледельцы стали вести активную торговлю не только с кочевыми племенами,
+                        но и с большими караванами, следовавшими через долину реки Чу по Великому
+                        Шелковому пути из Восточной Европы в Юго-Восточную Азию.
+                    </p>
+                    <div class="transport-item__btns">
+                        <div>
+                            <p>
+                                - 1st Service
+                            </p>
+                            <p>
+                                - 2st service
+                            </p>
+                        </div>
+                        <div>
+                            <a data-modal="10" class="js-open-modal" href="">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="transport-item">
+                    <h3 class="trans-item__title">
+                        2st Service
+                    </h3>
+                    <p class="trans-item__desc">
+                        Земледельцы стали вести активную торговлю не только с кочевыми племенами,
+                        но и с большими караванами, следовавшими через долину реки Чу по Великому
+                        Шелковому пути из Восточной Европы в Юго-Восточную Азию.
+                    </p>
+                    <div class="transport-item__btns">
+                        <div>
+                            <p>
+                                - 1st Service
+                            </p>
+                            <p>
+                                - 2st service
+                            </p>
+                        </div>
+                        <div>
+                            <a href="" data-modal="10" class="js-open-modal">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--    samo modalnoe  okno dlya contacta    -->
+        <div class="modal" data-modal="10">
+            <div class="modal-wrapper__contact">
+                <h2 class="modal-wrapper__title">Оставить заявку</h2>
+                <svg class="modal__cross js-modal-close" fill="white" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z">
+                    </path>
+                </svg>
+                <div class="modal-wrapper__items">
+                    <div class="contacts-item">
+                        <form class="contact-form" action="" method="post" role="form">
+                            <input name="name" type="text" placeholder="Имя" required><br>
+                            <input name="e-mail" type="email" placeholder="Почта" required><br>
+                            <input name="phone" type="tel" placeholder="Телефон" required><br>
+                            <input type="text" class="question" placeholder="Ваш вопрос" required><br>
+                            <button class="contacts-btn" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay js-overlay-modal"></div>
+
+    </main>
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-item-right">
+                    <a href="index.html">
+                        <img src="ngn/img/icon/logo.svg" alt="#">
+                    </a>
+                </div>
+                <div class="footer-item-left">
+                    <div class="footer-item">
+                        <div class="footer-title">Выбрать
+                            тур-поездку</div>
+                        <a class="footer-sublink" href="tour.html">Индивидуальный</a>
+                        <a class="footer-sublink" href="tour.html">Групповой</a>
+                        <a class="footer-sublink" href="tour.html">Многодневный</a>
+                        <a class="footer-sublink" href="tour.html">Культурный</a>
+                        <a class="footer-sublink" href="tour.html">Экстремальный</a>
+                        <a class="footer-sublink" href="tour.html">Пеший</a>
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-title">
+                            Запланировать
+                            поездку
+                        </div>
+                        <a class="footer-sublink" href="tour.html">Найти тур</a>
+                        <a class="footer-sublink" href="about-us.html">Почему мы</a>
+                        <a class="footer-sublink" href="about-us.html">Наши эксперты</a>
+                        <!-- <a href="tour.html">Планируемые туры</a>
+                    <a href="tour.html">Составить тур</a> -->
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-title footer-title-2">
+                            Компания
+                        </div>
+                        <a class="footer-sublink" href="yurta.html">Юрточный лагерь</a>
+                        <a class="footer-sublink" href="contacts.html">Условия</a>
+                        <a class="footer-sublink" href="contacts.html">Политика бронирования</a>
+                        <a class="footer-sublink" href="contacts.html">Конфиденциальность</a>
+                        <!-- <a href="">Новости</a> <br>
+                    <a href="">Вакансия</a> -->
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-title">
+                            Служба
+                            поддержки
+                        </div>
+                        <a class="footer-sublink" href="contacts.html">Связаться с нами</a>
+                        <a class="footer-sublink" href="contacts.html">Вопросы-ответы</a>
+                        <a class="footer-sublink" href="contacts.html">Страхование</a>
+                    </div>
+                    <!-- <div class="footer-item">
+                    <div class="footer-title footer-title-2">
+                        Карта
+                    </div>
+                    <a href="">3D тур</a>
+                </div> -->
+                    <div class="footer-item">
+                        <div class="footer-title footer-title-2">
+                            Подписывайтесь
+                        </div>
+                        <a href="https://www.instagram.com/ulush_travel/" class="social">
+                            <img src="ngn/img/icon/Instagram.svg" alt="#">
+                            <p>Instagram</p>
+                        </a>
+                        <a href="https://t.me/ulush_travel" class="social">
+                            <img src="ngn/img/icon/Telegram.svg" alt="#">
+                            <p>Telegram</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">Ulush Travel 2019-2021. Все права защищены</p>
+        </div>
+    </footer>
+
+
+    <!--    scrirts -->
+    <script src="ngn/js/app.js"></script>
+    <script src="ngn/js/tour.js"></script>
+</body>
+
+</html>

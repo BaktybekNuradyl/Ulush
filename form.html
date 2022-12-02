@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour form</title>
+</head>
+<body>
+    
+    <form method="post" enctype="multipart/form-data">
+        <input name="progdays" class="progdays" type="text" placeholder="Дни">
+        <input name="progloc" class="progloc" type="text" placeholder="Локация">
+        <input name="progfiles[]" class="progfile" type="file">
+        <button class="add_progelem">сохранить день программы</button>
+        <input name="go" type="submit">
+    </form>
+ 
+
+    <!--   scripts  form   -->
+    <script>
+        let tform = document.querySelector('form');
+        document.onclick = function(e) {
+            if( e.target.classList.contains('add_progelem') ) {
+                e.preventDefault();
+                let progelem = {
+                    'location': document.querySelector('.progloc').value,
+                    'day': document.querySelector('.progdays').value
+                }
+                let proginput = document.createElement('input');
+                proginput.setAttribute('name', 'program[]');
+                proginput.setAttribute('type', 'hidden');
+
+                // let proginputfile = document.createElement('input');
+                // proginputfile.setAttribute('name', 'progfile[]');
+                // proginputfile.setAttribute('type', 'file');
+                // proginputfile.value = document.querySelector('.progfile').value;
+                let proginputfile2 = document.querySelector('.progfile');
+                tform.append(proginputfile2);
+
+                proginput.value = JSON.stringify( progelem );
+                // tform.append(proginput);
+                // tform.append(proginputfile);
+                console.log(proginputfile2.files[0]);
+                console.log(proginput);
+                console.log(document.querySelector('.progfile').value);
+            }
+        }
+        tform.onsubmit = function(e) {
+
+            console.log(tform);
+        }
+
+    </script>
+
+
+</body>
+</html>

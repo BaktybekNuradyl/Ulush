@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>podbor tura page</title>
+   <link rel="stylesheet" href="ngn/styles/style.css">
+</head>
+
+<body>
+
+     <!-- navigation -->
+     <nav>
+      <div class="container">
+          <div class="nav">
+              <div class="nav-item__left">
+                  <a href="index.html" class="logo">
+                      <img src="ngn/img/icon/logo.svg" alt="#">
+                  </a>
+              </div>
+              <div class="nav-item__right ">
+                  <div class="nav-item">
+                      <a href="tour.html">Туры</a>
+                  </div>
+                  <div class="nav-item">
+                      <a href="about-us.html">О нас </a>
+                  </div>
+                  <div class="nav-item">
+                      <a href="yurta.html">Другие услуги</a>
+                  </div>
+                  <div class="nav-item">
+                      <a href="about-kg.html">О Кыргызстане</a>
+                  </div>
+                  <!-- <div class="nav-item">
+                      <a href="#">Карта</a>
+                  </div> -->
+                  <div class="nav-item">
+                      <a href="contacts.html">Контакты</a>
+                  </div>
+                  <div class="nav-item">
+                      <a href="#">
+                          <img src="ngn/img/icon/russian.svg" alt="#">
+                      </a>
+                  </div>
+                  <!-- <div class="nav-item">
+                      <a href="#">
+                          <img src="ngn/img/icon/Search.svg" alt="#">
+                      </a>
+                  </div> -->
+                  <div class="nav-item music-nav">
+                      <div class="container-audio" onclick="toggleAudio()">
+                          <audio preload="metadata" controls controlslist="nodownload">
+                              <source
+                                  src="ngn/music/penie.mp3"
+                                  type="audio/mpeg">
+                              Your browser does not support the audio tag.
+                          </audio>
+                          <div class="play-button"></div>
+                      </div>
+                  </div>
+              </div>
+
+              <!--   burger menu   -->
+              <div class="burger">
+                  <span></span>
+              </div>
+          </div>
+  </nav>
+
+
+   <!--    main  content   -->
+   <main>
+      <section class="podbor">
+         <div class="container">
+            <h3 class="podbor-title">Вид тура </h3>
+         </div>
+      </section>
+      <section class="filtr">
+         <div class="container">
+            <div class="filtr-wrapper">
+
+               <div class='faq'>
+                  <h4 class="faq-title">
+                     Подберите тур
+                  </h4>
+                  <!--1 question-->
+                  <div class="faq-container">
+                     <div class="faq-label">
+                        <div class="faq-label-text">
+                           Тип тура
+                        </div>
+                        <div class="faq-label-icon">
+                           <span class="material-icons">
+                              <img src="ngn/img/tour-page-img/filtr-icon.svg" alt="#">
+                           </span>
+                        </div>
+
+                     </div>
+                     <div class="faq-answer ">
+                        <div class="faq-answer-content">
+                           <div>
+                              <input type="checkbox" id="cultural" value="">
+                              <label for="cultural">Культурный</label>
+                           </div>
+                           <div>
+                              <input type="checkbox" id="extremality" value="">
+                              <label for="extremality">Экстремальный</label>
+                           </div>
+                           <div>
+                              <input type="checkbox" id="peshiy" value="">
+                              <label for="peshiy">Пеший</label>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+                  <!--2 question-->
+                  <div class="faq-container">
+                     <div class="faq-label">
+                        <div class="faq-label-text">
+                           Интересы
+                        </div>
+                        <div class="faq-label-icon">
+                           <span class="material-icons">
+                              <img src="ngn/img/tour-page-img/filtr-icon.svg" alt="#">
+                           </span>
+                        </div>
+
+                     </div>
+                     <div class="faq-answer ">
+                        <div class="faq-answer-content">
+                           <div>
+                              <input type="checkbox" id="mountain"  value="">
+                              <label for="mountain">Горы</label>
+                           </div>
+                           <div>
+                              <input type="checkbox" id="beach"  value="">
+                              <label for="beach">Пляж</label>
+                           </div>
+                           <div>
+                              <input type="checkbox" id="kamping"  value="">
+                              <label for="kamping">Кемпинг</label>
+                           </div>
+
+                        </div>
+
+                     </div>
+                  </div>
+                  <!-- 3 question -->
+                  <div class="faq-container">
+                     <div class="faq-label">
+                        <div class="faq-label-text">
+                           Месяц
+                        </div>
+                        <div class="faq-label-icon">
+                           <span class="material-icons">
+                              <img src="ngn/img/tour-page-img/filtr-icon.svg" alt="#">
+                           </span>
+                        </div>
+
+                     </div>
+                     <div class="faq-answer ">
+                        <div class="faq-answer-content">
+                                <div class="faq-month">
+                                  <span>
+                                    <select id="month" name="month">
+                                      <option id="January" selected>Январь</option>
+                                      <option id="February">Февраль</option>
+                                      <option id="March">Март</option>
+                                      <option id="April">Апрель</option>
+                                      <option id="May">Maй</option>
+                                      <option id="June">Июнь</option>
+                                      <option id="July">Июль</option>
+                                      <option id="August">Aвгуст</option>
+                                      <option id="September">Сентябрь</option>
+                                      <option id="October">Oктябрь</option>
+                                      <option id="November">Ноябрь</option>
+                                      <option id="December">Декабрь</option>
+                                    </select>
+                                  </span>
+                              </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="faq-container">
+                     <div class="faq-label">
+                        <div class="faq-label-text">
+                           Количество дней
+                        </div>
+                        <div class="faq-label-icon">
+                           <span class="material-icons">
+                              <img src="ngn/img/tour-page-img/filtr-icon.svg" alt="#">
+                           </span>
+                        </div>
+
+                     </div>
+                     <div class="faq-answer ">
+                        <div class="faq-answer-content">
+                           <div class="faq-day">
+                              <span>
+                                <select id="day" name="day">
+                                  <option id="first" selected>1</option>
+                                  <option id="second">2</option>
+                                  <option id="third">3</option>
+                                  <option id="four">4</option>
+                                  <option id="five">5</option>
+                                  <option id="six">6</option>
+                                  <option id="seven">7</option>
+                                  <option id="eight">8</option>
+                                  <option id="nine">9</option>
+                                  <option id="ten">10</option>
+                                  <option id="eleven">11</option>
+                                  <option id="twelve">12</option>
+                                  <option id="thereteen">13</option>
+                                  <option id="fourteen">14</option>
+                                  <option id="fiveteen">15</option>
+                                </select>
+                              </span>
+                          </div>
+                        </div>
+
+                     </div>
+                  </div>
+                  <div class="faq-container">
+                     <div class="faq-label">
+                        <div class="faq-label-text">
+                           Сложность
+                        </div>
+                        <div class="faq-label-icon">
+                           <span class="material-icons">
+                              <img src="ngn/img/tour-page-img/filtr-icon.svg" alt="#">
+                           </span>
+                        </div>
+
+                     </div>
+                     <div class="faq-answer ">
+                        <div class="faq-answer-content">
+                           <div>
+                              <input type="checkbox" id="hard"  value="">
+                              <label for="hard">Сложный</label>
+                           </div>
+                           <div>
+                              <input type="checkbox" id="normal"  value="">
+                              <label for="normal">Средний</label>
+                           </div>
+                           <div>
+                              <input type="checkbox" id="easy"  value="">
+                              <label for="easy">Лёгкий</label>
+                           </div>
+
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+
+               <div class="filtr-content">
+                  <div class="filtr-sort">
+                     <h4 class="sort-title">Сортировать</h4>
+                     <p>По новизне</p>
+                     <p>По дате выезда</p>
+                     <p>По цене</p>
+                     <p>По длительности</p>
+                  </div>
+                  <div class="filtr-cards">
+                     <a href="program-tour.html" class="filtr-card">
+                        <img src="ngn/img/tour-page-img/filtr-item2.jpg" alt="#">
+                        <div class="filtr-card__desc">
+                           <div class="filtr-card__title">Море</div>
+                           <div class="filtr-card__type">
+                              <p class="card-subtitle">Вид тура : </p>
+                              <p>джип-тур</p>
+                           </div>
+                           <div class="filtr-card__quality">
+                              <p class="card-subtitle">Сложность :</p>
+                              <p>легкая</p>
+                           </div>
+                           <div class="filtr-card__time">
+                              <p class="card-subtitle">Длительность :</p>
+                              <p>15 дней</p>
+                           </div>
+                           <div class="card-price">
+                              459 $
+                           </div>
+                        </div>
+                     </a>
+                     <a href="program-tour.html" class="filtr-card">
+                        <img src="ngn/img/tour-page-img/filtr-item2.jpg" alt="#">
+                        <div class="filtr-card__desc">
+                           <div class="filtr-card__title">Море</div>
+                           <div class="filtr-card__type">
+                              <p class="card-subtitle">Вид тура : </p>
+                              <p>джип-тур</p>
+                           </div>
+                           <div class="filtr-card__quality">
+                              <p class="card-subtitle">Сложность :</p>
+                              <p>легкая</p>
+                           </div>
+                           <div class="filtr-card__time">
+                              <p class="card-subtitle">Длительность :</p>
+                              <p>15 дней</p>
+                           </div>
+                           <div class="card-price">
+                              459 $
+                           </div>
+                        </div>
+                     </a>
+                     <a href="program-tour.html" class="filtr-card">
+                        <img src="ngn/img/tour-page-img/filtr-item2.jpg" alt="#">
+                        <div class="filtr-card__desc">
+                           <div class="filtr-card__title">Море</div>
+                           <div class="filtr-card__type">
+                              <p class="card-subtitle">Вид тура : </p>
+                              <p>джип-тур</p>
+                           </div>
+                           <div class="filtr-card__quality">
+                              <p class="card-subtitle">Сложность :</p>
+                              <p>легкая</p>
+                           </div>
+                           <div class="filtr-card__time">
+                              <p class="card-subtitle">Длительность :</p>
+                              <p>15 дней</p>
+                           </div>
+                           <div class="card-price">
+                              459 $
+                           </div>
+                        </div>
+                     </a>
+                     <a href="program-tour.html" class="filtr-card">
+                        <img src="ngn/img/tour-page-img/filtr-item2.jpg" alt="#">
+                        <div class="filtr-card__desc">
+                           <div class="filtr-card__title">Море</div>
+                           <div class="filtr-card__type">
+                              <p class="card-subtitle">Вид тура : </p>
+                              <p>джип-тур</p>
+                           </div>
+                           <div class="filtr-card__quality">
+                              <p class="card-subtitle">Сложность :</p>
+                              <p>легкая</p>
+                           </div>
+                           <div class="filtr-card__time">
+                              <p class="card-subtitle">Длительность :</p>
+                              <p>15 дней</p>
+                           </div>
+                           <div class="card-price">
+                              459 $
+                           </div>
+                        </div>
+                     </a>
+                     <a href="program-tour.html" class="filtr-card">
+                        <img src="ngn/img/tour-page-img/filtr-item2.jpg" alt="#">
+                        <div class="filtr-card__desc">
+                           <div class="filtr-card__title">Море</div>
+                           <div class="filtr-card__type">
+                              <p class="card-subtitle">Вид тура : </p>
+                              <p>джип-тур</p>
+                           </div>
+                           <div class="filtr-card__quality">
+                              <p class="card-subtitle">Сложность :</p>
+                              <p>легкая</p>
+                           </div>
+                           <div class="filtr-card__time">
+                              <p class="card-subtitle">Длительность :</p>
+                              <p>15 дней</p>
+                           </div>
+                           <div class="card-price">
+                              459 $
+                           </div>
+                        </div>
+                     </a>
+                     <a href="program-tour.html" class="filtr-card">
+                        <img src="ngn/img/tour-page-img/filtr-item2.jpg" alt="#">
+                        <div class="filtr-card__desc">
+                           <div class="filtr-card__title">Море</div>
+                           <div class="filtr-card__type">
+                              <p class="card-subtitle">Вид тура : </p>
+                              <p>джип-тур</p>
+                           </div>
+                           <div class="filtr-card__quality">
+                              <p class="card-subtitle">Сложность :</p>
+                              <p>легкая</p>
+                           </div>
+                           <div class="filtr-card__time">
+                              <p class="card-subtitle">Длительность :</p>
+                              <p>15 дней</p>
+                           </div>
+                           <div class="card-price">
+                              459 $
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+   </main>
+
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+          <div class="footer-wrapper">
+              <div class="footer-item-right">
+                 <a href="index.html">
+                  <img src="ngn/img/icon/logo.svg" alt="#">
+                 </a>
+              </div>
+              <div class="footer-item-left">
+                  <div class="footer-item">
+                      <div class="footer-title">Выбрать
+                          тур-поездку</div>
+                      <a class="footer-sublink" href="tour.html">Индивидуальный</a>
+                      <a class="footer-sublink" href="tour.html">Групповой</a>
+                      <a class="footer-sublink" href="tour.html">Многодневный</a>
+                      <a class="footer-sublink" href="tour.html">Культурный</a>
+                      <a class="footer-sublink" href="tour.html">Экстремальный</a>
+                      <a class="footer-sublink" href="tour.html">Пеший</a>
+                  </div>
+                  <div class="footer-item">
+                      <div class="footer-title">
+                          Запланировать
+                          поездку
+                      </div>
+                      <a class="footer-sublink" href="tour.html">Найти тур</a>
+                      <a class="footer-sublink" href="about-us.html">Почему мы</a>
+                      <a class="footer-sublink" href="about-us.html">Наши эксперты</a>
+                      <!-- <a href="tour.html">Планируемые туры</a>
+                      <a href="tour.html">Составить тур</a> -->
+                  </div>
+                  <div class="footer-item">
+                      <div class="footer-title footer-title-2">
+                          Компания
+                      </div>
+                      <a class="footer-sublink" href="yurta.html">Юрточный лагерь</a>
+                      <a class="footer-sublink" href="contacts.html">Условия</a>
+                      <a class="footer-sublink" href="contacts.html">Политика бронирования</a>
+                      <a class="footer-sublink" href="contacts.html">Конфиденциальность</a>
+                      <!-- <a href="">Новости</a> <br>
+                      <a href="">Вакансия</a> -->
+                  </div>
+                  <div class="footer-item">
+                      <div class="footer-title">
+                          Служба
+                          поддержки
+                      </div>
+                      <a class="footer-sublink" href="contacts.html">Связаться с нами</a>
+                      <a class="footer-sublink" href="contacts.html">Вопросы-ответы</a>
+                      <a class="footer-sublink" href="contacts.html">Страхование</a>
+                  </div>
+                  <!-- <div class="footer-item">
+                      <div class="footer-title footer-title-2">
+                          Карта
+                      </div>
+                      <a href="">3D тур</a>
+                  </div> -->
+                  <div class="footer-item">
+                      <div class="footer-title footer-title-2">
+                          Подписывайтесь
+                      </div>
+                      <a href="https://www.instagram.com/ulush_travel/" class="social">
+                          <img src="ngn/img/icon/Instagram.svg" alt="#">
+                          <p>Instagram</p>
+                      </a>
+                      <a href="https://t.me/ulush_travel" class="social">
+                          <img src="ngn/img/icon/Telegram.svg" alt="#">
+                          <p>Telegram</p>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <p class="copyright">Ulush Travel 2019-2021. Все права защищены</p>
+      </div>
+  </footer>
+
+
+   <!--    scrirts -->
+   <script src="ngn/js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ulush Travel Tour page</title>
+   <link rel="stylesheet" href="ngn/styles/style.css">
+</head>
+
+<body>
+
+   <!-- navigation -->
+   <nav>
+      <div class="container">
+         <div class="nav">
+            <div class="nav-item__left">
+               <a href="index.html" class="logo">
+                  <img src="ngn/img/icon/logo.svg" alt="#">
+               </a>
+            </div>
+            <div class="nav-item__right ">
+               <div class="nav-item">
+                  <a href="tour.html">Туры</a>
+               </div>
+               <div class="nav-item">
+                  <a href="about-us.html">О нас </a>
+               </div>
+               <div class="nav-item">
+                  <a href="yurta.html">Другие услуги</a>
+               </div>
+               <div class="nav-item">
+                  <a href="about-kg.html">О Кыргызстане</a>
+               </div>
+               <!-- <div class="nav-item">
+                   <a href="#">Карта</a>
+               </div> -->
+               <div class="nav-item">
+                  <a href="contacts.html">Контакты</a>
+               </div>
+               <div class="nav-item">
+                  <a href="#">
+                     <img src="ngn/img/icon/russian.svg" alt="#">
+                  </a>
+               </div>
+               <!-- <div class="nav-item">
+                   <a href="#">
+                       <img src="ngn/img/icon/Search.svg" alt="#">
+                   </a>
+               </div> -->
+               <div class="nav-item music-nav">
+                  <div class="container-audio" onclick="toggleAudio()">
+                     <audio preload="metadata" controls controlslist="nodownload">
+                        <source src="ngn/music/penie.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                     </audio>
+                     <div class="play-button"></div>
+                  </div>
+               </div>
+            </div>
+
+            <!--   burger menu   -->
+            <div class="burger">
+               <span></span>
+            </div>
+         </div>
+   </nav>
+
+   <!-- header -->
+   <header class="tour">
+      <div class="container">
+         <div class="header-content">
+            <h1 class="header-title">Погрузись в красоты Центральной Азии</h1>
+            <p class="header-desc">
+               Открой для себя обогащающие природой и культурно тематические поездки под руководством профессионалов
+            </p>
+            <div class="form-group">
+               <p class="tour-subtitle">Найти свой тур</p>
+               <form class="tour-wrapper" action="option1.php">
+                  <p><select disabled class="tour-item" name="">
+                        <option disabled selected>Выберите страну</option>
+                        <option value="t1">Кыргызстан</option>
+                        <option value="t2">Казахстан</option>
+                        <option value="t3">Узбекистан</option>
+                        <option value="t4">Турция</option>
+                     </select>
+
+                  <p><select disabled class="tour-item" name="">
+                        <option disabled selected>Выберите вид тура</option>
+                        <option value="t1"></option>
+                        <option value="t2"></option>
+                        <option value="t3"></option>
+                        <option value="t4"></option>
+                     </select>
+
+                  <p><select disabled class="tour-item" name="">
+                        <option disabled selected>Выберите месяц </option>
+                        <option value="t1">Чебурашка</option>
+                        <option value="t2">Крокодил Гена</option>
+                        <option value="t3">Шапокляк</option>
+                        <option value="t4">Крыса Лариса</option>
+                     </select>
+                     <input disabled class="search-tour" type="submit" value="Найти">
+                  </p>
+               </form>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <!--    main  content   -->
+   <main>
+      <!--   security   -->
+      <section class="security-tour">
+         <div class="container">
+            <h3 class="security-title">
+               Ваш отдых - наша забота
+            </h3>
+            <p>
+               Иногда самые интересные путешествия - это те, в которых вы можете просто отпустить ситуацию и
+               наслаждаться впечатлениями, зная, что вы в надежных руках. Сервис и обслуживание- это неотъемлемая часть
+               нашей работы в Ulush Travel, и благополучие наших путешественников стоит на первом месте
+            </p>
+            <!-- pomenyal bg dlya etih dvuh blokov -->
+            <div class="security-item ">
+               <img class="security-item-save" src="ngn/img/tour-page-img/save.jpg" alt="#">
+               <div class="security-item__info">
+                  <div class="security-item__title">
+                     Безопасность
+                  </div>
+                  <div class="security-item__desc">
+                     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+                     magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
+                  </div>
+                  <!-- <a href="" class="security-item__btn">Подробнее <span><img src="img/icon/security-icon.svg"
+                           alt=""></span></a> -->
+               </div>
+            </div>
+            <div class="security-item security-item-reserv">
+               <img src="ngn/img/tour-page-img/reserv.jpg" alt="">
+               <div class="security-item__info">
+                  <div class="security-item__title">
+                     Политика бронирования
+                  </div>
+                  <div class="security-item__desc">
+                     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+                     magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
+                  </div>
+                  <!-- <a href="" class="security-item__btn">Подробнее <span><img src="img/icon/security-icon.svg"
+                           alt=""></span></a> -->
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+      <!--   slide  tours   -->
+      <section class="slide-tour">
+         <p class="slide-tour__subdesc">Какой вид отдыха Вам нравится больше?
+            Активный или культурный? В группе единомышленников
+            или индивидуально? Ниже выберите тур, который вы ищете</p>
+         <div class="items-wrapper">
+            <div class="items">
+               <div class="item">
+                  <div class="container">
+                     <div class="slide-tour__content">
+                        <img class="item-img" src="ngn/img/tour-page-img/Rectangle.svg" alt="#">
+                        <div class="slide-tour__desc">
+                           <h3 class="slide-tour__title">Культурный</h3>
+                           <a href="podbor-tura.html" class="security-item__btn slide-btn__tour">Подробнее <span><img
+                                    src="ngn/img/icon/tour-icon.svg" alt="#"></span></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="item">
+                  <div class="container">
+                     <div class="slide-tour__content">
+                        <img class="item-img" src="ngn/img/tour-page-img/Rectangle.svg" alt="#">
+                        <div class="slide-tour__desc">
+                           <h3 class="slide-tour__title">Культурный</h3>
+                           <a href="podbor-tura.html" class="security-item__btn slide-btn__tour">Подробнее <span><img
+                                    src="ngn/img/icon/tour-icon.svg" alt="#"></span></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="item">
+                  <div class="container">
+                     <div class="slide-tour__content">
+                        <img class="item-img" src="ngn/img/tour-page-img/Rectangle.svg" alt="#">
+                        <div class="slide-tour__desc">
+                           <h3 class="slide-tour__title">Культурный</h3>
+                           <a href="podbor-tura.html" class="security-item__btn slide-btn__tour">Подробнее <span><img
+                                    src="ngn/img/icon/tour-icon.svg" alt="#"></span></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+
+            <div class="button-container">
+               <div class="button"><i class="fas fa-angle-left">
+                     <img src="ngn/img/icon/left.svg" alt="#">
+                  </i></div>
+               <div class="button"><i class="fas fa-angle-right">
+                     <img src="ngn/img/icon/right.svg" alt="#">
+                  </i></div>
+            </div>
+         </div>
+      </section>
+
+
+      <!-- tours is coming -->
+      <section class="security-tour">
+         <div class="container">
+            <h3 class="come-tours__title">
+               Ближайшие туры
+            </h3>
+            <p>
+               Короткий текст общего характера, рассказывающий о видах туров, существующих у нас
+            </p>
+            <div class="come-tours__wrapper">
+               <div class="come-tours__item">
+                  <img src="ngn/img/main-page-images/food-img.jpg" alt="#">
+                  <p>Рафтинг</p>
+               </div>
+               <div class="come-tours__item">
+                  <img src="ngn/img/main-page-images/food-img.jpg" alt="#">
+                  <p>Арашан</p>
+               </div>
+               <div class="come-tours__item">
+                  <img src="ngn/img/main-page-images/food-img.jpg" alt="#">
+                  <p>Велотур</p>
+               </div>
+            </div>
+            <div class="popular-tours">
+               <h3 class="come-tours__title">
+                  Популярные туры
+               </h3>
+               <p>
+                  Короткий текст общего характера, рассказывающий о видах туров, существующих у нас
+               </p>
+               <div class="come-tours__wrapper">
+                  <div class="come-tours__item">
+                     <img src="ngn/img/main-page-images/food-img.jpg" alt="#">
+                     <p>Рафтинг</p>
+                  </div>
+                  <div class="come-tours__item">
+                     <img src="ngn/img/main-page-images/food-img.jpg" alt="#">
+                     <p>Арашан</p>
+                  </div>
+                  <div class="come-tours__item">
+                     <img src="ngn/img/main-page-images/food-img.jpg" alt="#">
+                     <p>Велотур</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+      <!--  otzyvy  section  -->
+      <section class="security-tour">
+         <div class="container">
+            <div class="feedback-wrapper">
+               <div class="slide">
+                  <div class="feedback-item">
+                     <div class="feedback-info">
+                        <h3 class="come-tours__title">Отзывы</h3>
+                        <p class="">
+                           Рельеф и расположение страны стали причиной тому, что каждый может ощутить все
+                           существующие
+                           виды климата, это и почти морской, и резко континентальный, и субтропический, и
+                           умеренный.
+                           Особенностью Кыргызстана является и то, как ярко выражена здесь смена времен года,
+                           что
+                           неудивительно, ведь ближайшие к ней земли богаты пустынями.
+
+                        </p>
+                        <p>Турист</p>
+                     </div>
+                     <div class="feedback-img">
+                        <img src="ngn/img/tour-page-img/devka.jpg" alt="#">
+                     </div>
+                  </div>
+               </div>
+               <div class="slide">
+                  <div class="feedback-item">
+                     <div class="feedback-info">
+                        <h3 class="come-tours__title">Отзывы</h3>
+                        <p class="">
+                           Рельеф и расположение страны стали причиной тому, что каждый может ощутить все
+                           существующие
+                           виды климата, это и почти морской, и резко континентальный, и субтропический, и
+                           умеренный.
+                           Особенностью Кыргызстана является и то, как ярко выражена здесь смена времен года,
+                           что
+                           неудивительно, ведь ближайшие к ней земли богаты пустынями.
+
+                        </p>
+                        <p>Турист</p>
+                     </div>
+                     <div class="feedback-img">
+                        <img src="ngn/img/tour-page-img/devka.jpg" alt="#">
+                     </div>
+                  </div>
+               </div>
+               <div class="slide">
+                  <div class="feedback-item">
+                     <div class="feedback-info">
+                        <h3 class="come-tours__title">Отзывы</h3>
+                        <p class="">
+                           Рельеф и расположение страны стали причиной тому, что каждый может ощутить все
+                           существующие
+                           виды климата, это и почти морской, и резко континентальный, и субтропический, и
+                           умеренный.
+                           Особенностью Кыргызстана является и то, как ярко выражена здесь смена времен года,
+                           что
+                           неудивительно, ведь ближайшие к ней земли богаты пустынями.
+
+                        </p>
+                        <p>Турист</p>
+                     </div>
+                     <div class="feedback-img">
+                        <img src="ngn/img/tour-page-img/devka.jpg" alt="#">
+                     </div>
+                  </div>
+               </div>
+               <div class="slide">
+                  <div class="feedback-item">
+                     <div class="feedback-info">
+                        <h3 class="come-tours__title">Отзывы</h3>
+                        <p class="">
+                           Рельеф и расположение страны стали причиной тому, что каждый может ощутить все
+                           существующие
+                           виды климата, это и почти морской, и резко континентальный, и субтропический, и
+                           умеренный.
+                           Особенностью Кыргызстана является и то, как ярко выражена здесь смена времен года,
+                           что
+                           неудивительно, ведь ближайшие к ней земли богаты пустынями.
+
+                        </p>
+                        <p>Турист</p>
+                     </div>
+                     <div class="feedback-img">
+                        <img src="ngn/img/tour-page-img/devka.jpg" alt="#">
+                     </div>
+                  </div>
+               </div>
+
+               <!--Controlling arrows-->
+               <div class="btn-wrapper feedback-btns">
+                  <span class="controls" onclick="prevSlide(-1)" id="left-arrow">
+                     <img src="ngn/img/icon/left.svg" alt="#">
+                  </span>
+                  <span class="controls" id="right-arrow" onclick="nextSlide(1)">
+                     <img src="ngn/img/icon/right.svg" alt="#">
+                  </span>
+               </div>
+               <div id="dots-con">
+                  <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+      <!--   foto gallery section -->
+
+      <section class="security-tour">
+         <div class="container">
+            <h3 class="come-tours__title">
+               Фотогаллерея
+            </h3>
+            <p>
+               В данной подборке показаны самые красивые фотографии сделанные во время туров
+            </p>
+            <div class="gallery-wrapper">
+               <div class="gallery-item">
+                  <div class="gallery-subitem">
+                     <img src="ngn/img/main-page-images/autumn.jpg" alt="#">
+                  </div>
+                  <div class="gallery-subitem">
+                     <img src="ngn/img/main-page-images/autumn.jpg" alt="#">
+                  </div>
+               </div>
+               <div class="gallery-item">
+                  <div class="gallery-subitem">
+                     <img src="ngn/img/main-page-images/autumn.jpg" alt="#">
+                  </div>
+                  <div class="gallery-subitem">
+                     <img src="ngn/img/main-page-images/autumn.jpg" alt="#">
+                  </div>
+                  <div class="gallery-subitem">
+                     <img src="ngn/img/main-page-images/autumn.jpg" alt="#">
+                  </div>
+               </div>
+               <div class="gallery-item">
+                  <div class="gallery-subitem">
+                     <img src="ngn/img/main-page-images/autumn.jpg" alt="#">
+                  </div>
+                  <div class="gallery-subitem subitem2">
+                     <div class="subitem2-img">
+                        <img src="ngn/img/main-page-images/autumn.jpg" alt="#">
+                     </div>
+                     <div class="subitem2-img">
+                        <img src="ngn/img/main-page-images/autumn.jpg" alt="#">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+
+   </main>
+
+
+   <!-- footer -->
+   <footer>
+      <div class="container">
+         <div class="footer-wrapper">
+            <div class="footer-item-right">
+               <a href="index.html">
+                  <img src="ngn/img/icon/logo.svg" alt="#">
+               </a>
+            </div>
+            <div class="footer-item-left">
+               <div class="footer-item">
+                  <div class="footer-title">Выбрать
+                     тур-поездку</div>
+                  <a class="footer-sublink" href="tour.html">Индивидуальный</a>
+                  <a class="footer-sublink" href="tour.html">Групповой</a>
+                  <a class="footer-sublink" href="tour.html">Многодневный</a>
+                  <a class="footer-sublink" href="tour.html">Культурный</a>
+                  <a class="footer-sublink" href="tour.html">Экстремальный</a>
+                  <a class="footer-sublink" href="tour.html">Пеший</a>
+               </div>
+               <div class="footer-item">
+                  <div class="footer-title">
+                     Запланировать
+                     поездку
+                  </div>
+                  <a class="footer-sublink" href="tour.html">Найти тур</a>
+                  <a class="footer-sublink" href="about-us.html">Почему мы</a>
+                  <a class="footer-sublink" href="about-us.html">Наши эксперты</a>
+                  <!-- <a href="tour.html">Планируемые туры</a>
+                         <a href="tour.html">Составить тур</a> -->
+               </div>
+               <div class="footer-item">
+                  <div class="footer-title footer-title-2">
+                     Компания
+                  </div>
+                  <a class="footer-sublink" href="yurta.html">Юрточный лагерь</a>
+                  <a class="footer-sublink" href="contacts.html">Условия</a>
+                  <a class="footer-sublink" href="contacts.html">Политика бронирования</a>
+                  <a class="footer-sublink" href="contacts.html">Конфиденциальность</a>
+                  <!-- <a href="">Новости</a> <br>
+                         <a href="">Вакансия</a> -->
+               </div>
+               <div class="footer-item">
+                  <div class="footer-title">
+                     Служба
+                     поддержки
+                  </div>
+                  <a class="footer-sublink" href="contacts.html">Связаться с нами</a>
+                  <a class="footer-sublink" href="contacts.html">Вопросы-ответы</a>
+                  <a class="footer-sublink" href="contacts.html">Страхование</a>
+               </div>
+               <!-- <div class="footer-item">
+                         <div class="footer-title footer-title-2">
+                             Карта
+                         </div>
+                         <a href="">3D тур</a>
+                     </div> -->
+               <div class="footer-item">
+                  <div class="footer-title footer-title-2">
+                     Подписывайтесь
+                  </div>
+                  <a href="https://www.instagram.com/ulush_travel/" class="social">
+                     <img src="ngn/img/icon/Instagram.svg" alt="#">
+                     <p>Instagram</p>
+                  </a>
+                  <a href="https://t.me/ulush_travel" class="social">
+                     <img src="ngn/img/icon/Telegram.svg" alt="#">
+                     <p>Telegram</p>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <p class="copyright">Ulush Travel 2019-2021. Все права защищены</p>
+      </div>
+   </footer>
+
+
+   <!--    scrirts -->
+   <script src="ngn/js/app.js"></script>
+   <script src="ngn/js/tour.js"></script>
+</body>
+
+</html>
